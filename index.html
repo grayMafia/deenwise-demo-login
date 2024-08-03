@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DeenWise</title>
+        <link rel="shortcut icon" href="images/favicon.svg" type="image/svg">
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body class="bg-blue-100">
+        <header class="bg-blue-500 py-2 relative">
+            <div class="container mx-auto w-5/6 flex justify-between items-center">
+                <a href="index.html"><img class="w-28 sm:w-40" src="images/logo.svg" alt="deenwise_logo"></a>
+                <nav>
+                    <button onclick="mainMenu()" class="text-white sm:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>
+                    </button>
+                    <ul id="main_menu" class="absolute bg-blue-500
+                                            w-full left-0 top-10 p-4 text-center hidden
+                                            sm:relative sm:top-0 sm:flex">
+                        <li class="mb-2 sm:mb-0 sm:ml-5"><a class="text-white font-semibold hover:text-gray-900 hover:transition-colors" href="">Home</a></li>
+                        <li class="mb-2 sm:mb-0 sm:ml-5"><a class="text-white font-semibold hover:text-gray-900 hover:transition-colors" href="">Contact</a></li>
+                        <li class="mb-2 sm:mb-0 sm:ml-5"><a class="text-white font-semibold hover:text-gray-900 hover:transition-colors" href="">Login</a></li>
+                        <li class="mb-2 sm:mb-0 sm:ml-5"><a class="text-white font-semibold hover:text-gray-900 hover:transition-colors" href="">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="h-full bg-blue-100 sm:my-28 ">
+            <div class="container mx-auto w-3/4 flex flex-col justify-between sm:flex-row sm:w-full sm:items-center">
+                <div class="order-1 px-4 py-8 sm:w-1/2 sm:py-8">
+                    <img src="images/login.svg" alt="login_image">
+                </div>
+                <div class="order-2 sm:w-1/2 sm:p-10">
+                    <div class="bg-white p-6 rounded-md shadow-md">
+                        <h2 class="text-xl font-bold mb-2">Login</h2>
+                        <form action="">
+                            <label class="font-semibold mb-1 block" for="email">Email</label>
+                            <input class="border w-full p-2 mb-2 rounded-md" type="email" placeholder="Enter your email address">
+                            <label class="font-semibold mb-1 block" for="password">Password</label>
+                            <input class="border w-full p-2 mb-4 rounded-md" type="password" placeholder="Enter your password">
+                            <button class="w-full bg-blue-500 p-2 rounded-md text-white font-semibold mb-4 hover:bg-black hover:transition-colors">Submit</button>
+                            <a class="text-sm text-center font-semibold block hover:underline" href="#">Forgotten password?</a>
+                        </form>
+                    </div>
+                    <p class="my-4 text-sm text-center">Don't have an account? <a class="font-semibold hover:text-black hover:underline" href="#">Sign up</a></p>
+                </div>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
